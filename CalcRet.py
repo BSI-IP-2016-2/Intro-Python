@@ -7,9 +7,10 @@ def calcRet():
         y = input("Digite a altura: ")
     if int(x) == 0 or int(y) == 0:
         print("O valor digitado está incorreto. Por favor, tente novamente: ")
+        return calcRet()
     elif int(x) > 0 and int(y) > 0:
         print(int(x) * int(y))
-    return calcRet()
+        return ()
 
 if __name__ == '__main__':
     calcRet()
