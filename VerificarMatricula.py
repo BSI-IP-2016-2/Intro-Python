@@ -1,4 +1,4 @@
-# Forma em Python 2.x para exibir a matricula do aluno no python atualizado:
+# Forma em Python 3.x para exibir a matricula do aluno no python atualizado:
 
 Nome = str(input("Digite o nome do aluno: ")) #Mostra na tela o input para o nome do aluno ser digitado
 Matr = 0 #Define a variável inicial da matrícula
