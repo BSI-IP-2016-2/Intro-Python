@@ -17,7 +17,7 @@ def calcRet():
         else:
             break
     if int(x) > 0 and int(y) > 0:
-        print(int(x) * int(y))
+        print(x * y)
         return ()
 
 if __name__ == '__main__':
