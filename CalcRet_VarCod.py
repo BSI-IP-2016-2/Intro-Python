@@ -16,7 +16,7 @@ def calcRet():
             continue
         else:
             break
-    if int(x) > 0 and int(y) > 0:
+    if x > 0 and y > 0:
         print(x * y)
         return ()
 
