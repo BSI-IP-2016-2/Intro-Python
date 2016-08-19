@@ -11,18 +11,3 @@ while True: #Entra no loop para verificar se a matrícula está sendo digitadas 
 	else:
 		break #Fecha o loop caso esteja tudo certo
 print ("Nome do Aluno: " + Nome + ",", "Matricula: %s" %(Matr)) #Exibe o nome do aluno e a matrícula na formatação exigida
-
-
-# Forma em Python 2.x para exibir a matricula do aluno no python atualizado:
-
-nome = raw_input('Escreva o nome do aluno:') # Mostra na tela para digitar o nome do aluno
-matricula = 0 #define a variável inicial da matrícula
-while True: #setando o loop
-    try:
-        matricula = int(input('Escreva o numero de matricula do aluno:'))
-    except ValueError:
-        print('Apenas numeros na matricula')
-        continue # enquanto não for numero, solicita uma numeração válida
-    else:
-        break # fecha o loop 
-print('O nome do aluno e: '+ nome + ' e sua matricula e: %s'%(matricula)) # exibe o solicitado na tela
