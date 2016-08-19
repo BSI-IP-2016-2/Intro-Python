@@ -1,4 +1,7 @@
-def calcRet():
+##### Semelhante ao código normal, porém usa uma função para chamar os códigos #####
+##### Os comentários restantes estão no outro código ###############################
+
+def calcRet(): #Define uma função (pode ser qualquer nome)
     x, y = (0,)*2
     while True:
         try:
@@ -18,8 +21,8 @@ def calcRet():
             break
     if x > 0 and y > 0:
         print(x * y)
-        return ()
+        return () #Se certifica que essa função foi finalizada
 
-if __name__ == '__main__':
+if __name__ == '__main__': #Chama a função (sem essa parte, a função não entra e o código nunca inicia)
     calcRet()
 
