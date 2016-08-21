@@ -18,3 +18,5 @@ while True: #Faz o mesmo do de cima só que para o segundo número.
 xy = x * y #Cálcula o resultado e armazena na variável "xy"
 if int(x) > 0 and int(y) > 0: #Verifica se o número digitado foi maior que zero. Se sim, ele prossegue pro cálculo
     print('A área do seu terreno é: %d' % (xy)) #Mostra o resultado na tela junto a um texto
+else:
+    print('Medida para cálculo inexistente!')
