@@ -1,0 +1,23 @@
+'''
+Created on 22/08/2016
+@author: Brunno Camilo
+'''
+nome = input("Informe seu nome:")
+adress = input("Informe seu endereço:")
+school = input("Infome seu curso:")
+try: 
+    idade = int(input("Digite sua idade:"))
+except ValueError: 
+    print("Sua idade deve ser informada em números")
+    idade = int(input("Digite sua idade:"))
+try: 
+    altura = float(input("Informe sua altura:"))
+except ValueError: 
+    print("Sua altura deve ser informada em números")
+    altura = float(input("Informe sua altura:"))
+try:
+    peso = float(input("Informe seu peso:"))
+except ValueError:
+    print("Seu peso deve ser infomado em números")
+    peso = float(input("Informe seu peso:"))
+print("Nome:%s\nResidente do endereco:%s\nÉ aluno do curso:%s\nEle tem %d anos\nAltura:%.2f\nPesa:%.2f kg" %(nome,adress,school,idade,altura,peso))
