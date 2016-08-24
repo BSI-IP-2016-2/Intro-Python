@@ -3,6 +3,15 @@ Introdução a Python (BSI - UFRPE - 2016.2)
 
 Aqui será possível depositar os códigos feitos para que outras pessoas possam tirar dúvidas e ver outras formas de resolver o mesmo problema. Para quem não quiser ficar entrando na página sempre que precisar ver um arquivo e/ou upar o seu próprio, é possível instalar o cliente do GitHub e acessar e upar os scripts diretamente do computador.
 
+## Divisão dos Arquivos por Pastas
+Pra ficar mais organizado, vamos dividir os arquivos e assuntos por pastas, assim fica mais fácil de acessar os scripts apenas relacionados com o assunto que se quer estudar.
+Atualmente está dividido em **Python Básico**, **Condicionais** e **Loops e Extras**. A pasta *Extra* servirá para adicionarmos coisas que não tenham relação com as aulas diretamente, mas tenham algo a ver com o assunto de programação (python ou outra linguagem).
+Tendo mais tipos de pastas que possam ajudar a todos, só é criar elas. 
+
+Pra criar pastas pelo site, é necessário criar um arquivo junto. Por exemplo, se quiser criar a pasta *Tutoriais*, precisa criar um novo arquivo (script) e na área que é possível mudar o nome dele, digitar o nome da pasta, uma barra e o nome do script. 
+Se eu quero criar a pasta *Tutoriais* eu crio antes um script chamado *ScriptTutoriais.py* e escrevo **Tutoriais/ScriptTutoriais.py**.
+Outra forma de se criar pasta, é usando o GitHub Desktop, basta criar uma pasta como se cria uma pasta no Windows (ou Linux) e colocar o que quiser dentro e então dar Sync.
+
 ## Instalação do GitHub Desktop
 
 Um tutorial rápido para quem não souber instalar e como funciona o cliente de desktop do GitHub;
