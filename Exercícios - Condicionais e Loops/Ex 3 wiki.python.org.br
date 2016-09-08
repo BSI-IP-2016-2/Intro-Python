@@ -1,0 +1,49 @@
+'''Exercício 3 do site http://wiki.python.org.br/EstruturaDeRepeticao
+Feito por André Arruda em 07/09/16
+Contato: andrebass27@gmail.com
+
+inicia a variável nome'''
+nome = "dd"
+'''inicia o laço para nome e certifica que nome terá mais de 3 caracteres'''
+while len(nome)<4:
+    nome = input("Informe o seu nome: ")
+else:
+    '''inicia a variável idade'''
+    idade = 151
+    '''garante que idade estará entre 0 e 150'''
+    while idade < 0 or idade > 150:
+        idade = int(input("Informe a sua idade: "))
+    else:
+        '''inicia salário'''
+        salario = 0
+        '''garante que salário só iniciará, se for maior que 0'''
+        while salario <= 0:
+            salario = float(input("Informe o seu salário: "))
+        else:
+            '''inicia variável sexo'''
+            sexo = "d"
+            '''só permitirá que o programa avance se a variável tiver os valores corretos'''
+            while sexo != "f" and sexo != "F" and sexo != "M" and sexo != "m":
+                sexo = input("Sexo: ")
+            else:
+                '''inicia a variável estadoCivil'''
+                estadoCivil = "t"
+                '''só permitirá que o programa avance caso a variável contenha os valores corretos'''
+                while estadoCivil != "s" and estadoCivil != "S" and estadoCivil != "c" and estadoCivil != "C" and estadoCivil != "v" and estadoCivil != "V" and estadoCivil != "d" and estadoCivil != "D":
+                    estadoCivil = input("Informe o seu estado civil: ")
+'''troca as iniciais pelo significado (variável sexo)'''
+if sexo == "f" or sexo == "F":
+    sexo = "Feminino"
+elif sexo == "m" or sexo == "M":
+    sexo = "Masculino"
+'''Troca as iniciais pelo significado (variável estadoCivil)'''
+if estadoCivil == "s" or estadoCivil == "S":
+    estadoCivil = "Solteiro"
+elif estadoCivil == "c" or estadoCivil == "C":
+    estadoCivil = "Casado"
+elif estadoCivil == "v" or estadoCivil == "V":
+    estadoCivil = "Viúvo"
+else:
+    estadoCivil = "Divorciado"
+'''exibe na tela as informações digitadas'''
+print("Nome: %s. Idade: %d anos. Salário: R$ %.2f. Sexo: %s. Estado Civil: %s." %(nome, idade, salario, sexo, estadoCivil))
