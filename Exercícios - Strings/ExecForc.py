@@ -6,17 +6,20 @@ palavraf = "_" * len(palavra) #Define uma variável para receber as modifica��
 
 while (erros > 0): #Entra num loop para contar acertos e erros
     letra = input("Digite uma letra: ").upper() #Digita a palavra e transforma em mai�scula pra evitar problemas de case-sensitive
+    if(letra in palavraf):
+        print("Você já digitou essa letra, por favor, escolha outra")
+        continue
     if(palavra.find(letra) != -1): #Se encontrar a palavra adiciona +1 em acerto e entra no for
         for i in range(len(palavra)): 
             if (letra in palavra[i]):
                 '''
                 Ele vai procurar pelo length da palavra até que a condicional "if" seja satisfeita.
                 Se ela for satisfeita, ele vai então pegar a "palavraf" e criar uma nova string
-                Onde será adicionar a parte encontrada em "palavra" na mesma área de "palavraf" + a letra encontrada em "palavra"
+                Onde será adicionar a parte encontrada em "palavra" na mesma �área de "palavraf" + a letra encontrada em "palavra"
                 + a "palavraf" a partir da letra adicionada + 1 espaço "_" pra fusionar os dois.
                 '''
+                acertos += 1
                 palavraf = palavraf[:i] + palavra[i] + palavraf[i+1:]
-        acertos += 1
         if(acertos <= 5):
             print("A palavra é: %s" % (palavraf))
     elif(palavra.find(letra) == -1): #Se não encontrar, adiciona uma quantidade de erro pra contar quantos já foram feitos
@@ -28,4 +31,4 @@ while (erros > 0): #Entra num loop para contar acertos e erros
         print("Você venceu! :D A palavra era: %s" % (palavra))
         break
 else:
-    print("Voc� perdeu :(")
+    print("Você perdeu :(")
