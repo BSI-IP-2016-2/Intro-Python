@@ -1,0 +1,17 @@
+"""
+Ler uma lista de 5 números inteiros e mostre cada número juntamente com a sua posição na lista. 
+@Author: Brunno Camilo
+"""
+Nmros = []#Cria uma lista vazia para ser preenchida pelos input da variável NdL
+for x in range(5):#Cria um for para pedir 5 vezes que o usuário digite um número
+    while True:#While para checar se o usuário realmente digitou um número
+        try:
+            NdL = int(input("Informe um número inteiro:"))
+        except:#Caso o usuário digite qualquer coisa sem ser números inteiros
+            print("Informe apenas números inteiros.")
+            continue#Volta pro início do loop
+        else:
+            break#Caso tudo der certo
+    Nmros.append(NdL)#Adiciona o número da váriavel NdL a um espaço da lista vazia criada acima
+for y,z in enumerate(Nmros):#Enumarate para caçar as respectivas identidades das váriaveis XP
+    print("Na posição",y+1,"está o número",z)
