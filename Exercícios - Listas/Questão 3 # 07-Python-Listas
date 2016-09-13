@@ -1,0 +1,20 @@
+'''
+Ler uma lista com 4 notas, em seguida o programa deve exibir as notas e a média.
+@author:Brunno Camilo
+'''
+Notas = []#Váriavel de notas
+Soma = 0
+for x in range(4):#For para pedir que o usuário digite 4 notas
+    while True:#While pra checar se o usuário digitou números
+        try:
+            print("Informe a %dº Nota:" % (x+1) ,end="")#Gambiarra para mostrar o número de ordem
+            Nx = float(input())#input vazio para complementar o print de cima
+        except:
+            print("Informe apenas números.")
+            continue
+        else:
+            break
+    Notas.append(Nx)#Adicionando o Nx (número que o usuário digitou à lista)
+for y,z in enumerate(Notas):#enumerando as notas
+    print("A %dª Nota é: %.2f" % (y+1,z))
+print("A média de notas é %.2f" %(sum(Notas)/len(Notas)))#Usei a função soma pra somar a lista e a função lenght para dividir
